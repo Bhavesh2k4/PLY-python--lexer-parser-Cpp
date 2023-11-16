@@ -1,8 +1,9 @@
 # PLY-python--lexer-parser-Cpp
-This project is a simple  parser for a C++ language, implemented using PLY (Python Lex-Yacc). It includes a lexer and parser to analyze the syntax of input code, supporting features like conditional statements, loops, variable assignments, and expressions. Provides a foundation for understanding lexical analysis and parsing concepts.
+This project is a simple  parser for C++ language, implemented using PLY (Python Lex-Yacc). It includes a lexer and parser to analyze the syntax of input code, supporting features like conditional statements, loops, variable assignments, and expressions. Provides a foundation for understanding lexical analysis and parsing concepts.
 
+*pip install ply*
 
-Lexer (ply.lex):
+*Lexer (ply.lex):*
 
 The lexer defines a set of tokens, which are the building blocks of the programming language. Tokens include numbers, operators, keywords, etc.
 Regular expressions are used to define the patterns for each token, such as numbers, arithmetic operators, parentheses, etc.
@@ -10,7 +11,7 @@ Reserved keywords like 'while,' 'if,' 'else,' etc., are specified in a dictionar
 The t_ID function identifies identifiers and checks if they are reserved words.
 The lexer also handles comments and ignores whitespace.
 
-Parser (ply.yacc):
+*Parser (ply.yacc):*
 
 The parser specifies the grammar of the language using a set of production rules.
 Precedence rules are defined for operators like +, -, *, and /.
@@ -25,8 +26,7 @@ The p_expression rule defines expressions with different operators and operands.
 The p_assignment rule handles variable assignments.
 The p_error function handles syntax errors.
 
-
-Test and Output:
+*Test and Output:*
 
 The code includes a simple test loop where the user can input lines of code.
 The input code is then parsed using the defined parser.
